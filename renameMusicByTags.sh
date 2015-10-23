@@ -14,14 +14,25 @@ if ! [[ -f $1 ]] ; then
   exit 1
 fi
 
-ARTIST=$(mp3info -p %a $1)
-ALBUM=$(mp3info -p %l $1)
-SONG=$(mp3info -p %t $1)
+ARTIST="unknown"
+ALBUM="unknown"
+SONG="unknown"
 
-# To lowercase
-ARTIST=${ARTIST,,}
-ALBUM=${ALBUM,,}
-SONG=${SONG,,}
+# Check tags
+if [[ $(mp3info -p %a $1) ]] ; then
+  ARTIST=$(mp3info -p %a $1)
+  ARTIST=${ARTIST,,} # To lowercase
+fi
+
+if [[ $(mp3info -p %l $1) ]] ; then
+  ALBUM=$(mp3info -p %l $1)
+  ALBUM=${ALBUM,,} # To lowercase
+fi
+
+if [[ $(mp3info -p %t $1) ]] ; then
+  SONG=$(mp3info -p %t $1)
+  SONG=${SONG,,} # To lowercase
+fi
 
 # Get File Extension
 EXTENSION=$(echo $1|awk -F . '{print $NF}')
