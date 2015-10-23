@@ -7,4 +7,4 @@ If you're an obsessively tidy person like me you'll want to have all your music 
 ## Instructions
 
 * Install mp3info if not installed: `sudo apt-get install mp3info`
-* Convert any mp3 or m4a file: `./renameMusicByTags.sh your_file.mp3`
+* Convert any mp3 file: `./renameMusicByTags.sh your_file.mp3`
