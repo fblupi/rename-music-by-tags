@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ $# != 1 ]] ; then
-  echo "use: sh renameMusicByTags.sh <file>"
+  echo "use: ./renameMusicByTags.sh <file>"
   exit 1
 fi
 
@@ -44,4 +44,4 @@ fi
 NAME="$ARTIST - $ALBUM - $SONG.mp3"
 
 # Rename
-mv "$1" "$NAME"
+mv "$1" $(dirname "$1")/"$NAME"

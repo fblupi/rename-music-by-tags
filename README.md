@@ -6,5 +6,16 @@ If you're an obsessively tidy person like me you'll want to have all your music 
 
 ## Instructions
 
+### Requirements
+
 * Install mp3info if not installed: `sudo apt-get install mp3info`
-* Convert any mp3 file: `./renameMusicByTags.sh your_file.mp3`
+
+### Use
+
+#### Convert single file
+
+* Convert any mp3 file: `./renameMusicByTags.sh <file>`
+
+#### Convert multiple files
+
+* Convert every mp3 files from a directory: `./renameMusicInADirectory <directory>` (Directory must finish on backslash "/". For example `./renameMusicInADirectory ~/MyMusic/RockAndRollCompilation/`)
