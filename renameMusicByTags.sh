@@ -44,4 +44,4 @@ fi
 NAME="$ARTIST - $ALBUM - $SONG.mp3"
 
 # Rename
-mv "$1" $(dirname "$1")/"$NAME"
+mv "$1" "$(dirname "$1")"/"$NAME"
