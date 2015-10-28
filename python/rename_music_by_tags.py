@@ -35,9 +35,9 @@ if not os.path.isfile(input_file):
 # loading tags
 audio_file = eyed3.load(input_file)
 
-artist = "unknown"
-album = "unknonw"
-title = "unknown"
+artist = 'unknown'
+album = 'unknonw'
+title = 'unknown'
 
 # getting elements of new file name
 if audio_file.tag.artist != None:   # tag not null
@@ -54,7 +54,8 @@ if audio_file.tag.title != None:    # tag not null
 
 # generating new file name
 directory = os.path.dirname(os.path.realpath(input_file))
-new_name = "%s/%s - %s - %s.mp3" % (directory, artist, album, title)
+new_name = '%s/%s - %s - %s.mp3' % (directory, artist, album, title)
 
 # renaming file
 os.rename(input_file, new_name)
+print 'File: ' + input_file + '\nRenamed as: ' + new_name + '\n'

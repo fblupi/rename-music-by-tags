@@ -34,4 +34,8 @@ If you're an obsessively tidy person like me you'll want to have all your music 
 
 ##### Convert single file
 
-* Convert any mp3 file: `python rename_music_by_tags <file>`
+* Convert any mp3 file: `python rename_music_by_tags.py <file>`
+
+##### Convert multiple files
+
+* Convert every mp3 files from a directory: `python rename_music_in_a_directory.py <directory>` (Directory must finish on backslash "/". For example `python rename_music_in_a_directory.py ~/MyMusic/RockAndRollCompilation/`)
