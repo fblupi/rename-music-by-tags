@@ -8,6 +8,10 @@ If you're an obsessively tidy person like me you'll want to have all your music 
 
 ### Shell version
 
+#### Warning
+
+* This version has a little bug reported in [this issue](https://github.com/fblupi/RenameMusicByTags/issues/2 "mp3tag doesn't render unicode special characters"), so I recommend using Python version.
+
 #### Requirements
 
 * Install mp3info if not installed: `sudo apt-get install mp3info`
