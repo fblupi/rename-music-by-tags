@@ -6,6 +6,6 @@ fi
 
 for i in "$1"*; do
   if [[ $i == *.mp3 ]] ; then
-    ./renameMusicByTags.sh "$i"
+    $(python rename_music_by_tags "$i")
   fi
 done
