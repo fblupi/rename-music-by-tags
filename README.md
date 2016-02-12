@@ -31,8 +31,8 @@ If you're an obsessively tidy person like me you'll want to have all your music 
 #### Requirements
 
 * Install python if not installed: `sudo apt-get install python`
-* Install pip if not installed: http://pip.readthedocs.org/en/stable/installing/ (Python 2.7.9 and later on python2 series and Python 3.4 and later include pip by default).
-* Install eyed3 if not installed: `pip install eyed3`
+* Install pip if not installed `sudo apt-get install python-pip` (Python 2.7.9 and later on python2 series and Python 3.4 and later include pip by default).
+* Install eyed3 if not installed: `sudo pip install eyed3`
 
 #### Use
 
